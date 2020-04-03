@@ -14,7 +14,7 @@ LABEL maintainer="Zhenming Li <zhenmingliliang@gmail.com>"
 VOLUME /tmp
 
 # Puertos que estarán disponibles de nuestra aplicación.
-EXPOSE 8080
+EXPOSE 61616
 
 # Copiando el archivo jar generado luego de la ejecución del comando
 # gradle task bootjar, se crean el jar y se copia a la imagen.
@@ -31,7 +31,7 @@ ENTRYPOINT ["java", "-jar", "practica13.jar"]
 # sudo docker tag nombre_imagen_local id_usuario/nombre_a_subir
 # sudo docker push id_usuario/nombre_a_subir
 # Ejemplo:
-# sudo docker build -t docker-springboot .
+# sudo docker build -t docker-pringboot .
 # sudo docker tag docker-springboot vacax/docker-springboot
 # sudo docker push vacax/docker-springboot
 #docker run -p 8081:8081 -name spring-docker-01-app -d spring-docker-01

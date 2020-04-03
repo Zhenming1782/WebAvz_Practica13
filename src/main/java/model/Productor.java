@@ -17,7 +17,7 @@ public class Productor {
 
         //Creando el connection factory indicando el host y puerto, en la trama el failover indica que reconecta de manera
         // automatica
-        ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory("tcp://localhost:61616");
+        ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory("tcp://msj:61616");
 
         //Crea un nuevo hilo cuando hacemos a conexión, que no se detiene cuando
         // aplicamos el metodo stop(), para eso tenemos que cerrar la JVM o

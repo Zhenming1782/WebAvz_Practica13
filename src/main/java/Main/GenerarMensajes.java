@@ -13,7 +13,7 @@ public class GenerarMensajes {
 
         BrokerService brokerService = new BrokerService();
         try {
-            brokerService.addConnector("tcp://localhost:61616");
+            brokerService.addConnector("tcp://msj:61616");
             brokerService.start();
         } catch (Exception e) {
             e.printStackTrace();
